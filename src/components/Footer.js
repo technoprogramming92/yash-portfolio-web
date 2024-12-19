@@ -8,7 +8,7 @@ function Footer() {
         <Layout className='py-8 flex items-center justify-between'>
         <span>{new Date().getFullYear()} &copy; All Rights Reserved.</span>
         <div className='flex items-center'>
-        Build With <span className='text-primary text-2xl px-1'>&#9825;</span>by&nbsp;<Link href="https://ignitax.com/" className='underline underline-offset-2'>IGNITAX</Link>
+        Build With <span className='text-[#eb6e00] text-2xl px-1'>&#9825;</span>by&nbsp;<Link href="https://ignitax.com/" className='underline underline-offset-2'>IGNITAX</Link>
         </div>
         <Link href="https://ignitax.com/contact" target={"_blank"} className='underline underline-offset-2'>Say Hello</Link>
         </Layout>

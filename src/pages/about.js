@@ -6,6 +6,8 @@ import Image from "next/image";
 import profilePic from '../../public/images/profile/yash-profile-pic.png';
 import { AnimatedNumbers } from "@/components/AnimatedNumbers";
 import Skills from "@/components/Skills";
+import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 
 function about() {
   return (
@@ -65,6 +67,8 @@ function about() {
             </div>
           </div>
           <Skills/>
+          <Experience/>
+          <Education/>
         </Layout>
       </main>
     </>
