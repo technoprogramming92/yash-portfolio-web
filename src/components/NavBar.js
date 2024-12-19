@@ -10,7 +10,7 @@ const CustomLink = ({href, title, className=""}) => {
         <Link href={href} className={`${className} relative group`}>
             {title}
 
-            <span className={`h-[1px] inline-block bg-dark absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === href ? 'w-full':'w-0'}`}>&nbsp;</span>
+            <span className={`h-[1px] inline-block bg-[#f5f5f5] absolute left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${router.asPath === href ? 'w-full':'w-0'}`}>&nbsp;</span>
         </Link>
     )
 }
@@ -18,10 +18,10 @@ function NavBar() {
   return (
     <header className='w-full px-32 py-8 font-medium flex items-center justify-between'>
         <nav>
-        <CustomLink href="/" title="Home" className='mr-4'/>
-        <CustomLink href="/about" title="About" className='mx-4'/>
-        <CustomLink href="/updates" title="Updates" className='mx-4'/>
-        <CustomLink href="/articles" title="Articles" className='ml-4'/>
+        <CustomLink href="/" title="Home" className='mr-4 text-[#f5f5f5]'/>
+        <CustomLink href="/about" title="About" className='mx-4 text-[#f5f5f5]'/>
+        <CustomLink href="/updates" title="Updates" className='mx-4 text-[#f5f5f5]'/>
+        <CustomLink href="/articles" title="Articles" className='ml-4 text-[#f5f5f5]'/>
         </nav>
 
        
