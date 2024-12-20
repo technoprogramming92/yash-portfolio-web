@@ -20,7 +20,7 @@ function NavBar() {
         <nav>
         <CustomLink href="/" title="Home" className='mr-4 text-[#f5f5f5]'/>
         <CustomLink href="/about" title="About" className='mx-4 text-[#f5f5f5]'/>
-        <CustomLink href="/updates" title="Updates" className='mx-4 text-[#f5f5f5]'/>
+        <CustomLink href="/updates" title="Tax Updates" className='mx-4 text-[#f5f5f5]'/>
         <CustomLink href="/articles" title="Articles" className='ml-4 text-[#f5f5f5]'/>
         </nav>
 
