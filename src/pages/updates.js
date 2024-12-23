@@ -6,12 +6,15 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { GithubIcon } from '@/components/Icons'
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
+import {motion} from 'framer-motion'
 const FeaturedUpdate=({type, title, summary, img, link, githubLink})=>{
+  const FramerImage= motion(Image)
   return(
     <article className='flex w-full items-center justify-between rounded-3xl border border-solid border-[#f5f5f5] bg-[#000000] shadow-[#D6D6D4] shadow-xl p-12 relative'>
     
       <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded'>
-      <Image src={img} alt={title} className="w-full h-auto"/>
+      <FramerImage src={img} alt={title} className="w-full h-auto" whileHover={{scale:1.05}}
+      transition={{duration:0.2}}/>
       </Link>
 
      
@@ -30,10 +33,12 @@ const FeaturedUpdate=({type, title, summary, img, link, githubLink})=>{
 }
 
 const Project=({title,type,img,link,githubLink})=>{
+  const FramerImage= motion(Image)
   return(
     <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-[#f5f5f5] bg-[#000000] p-6 relative'>
 <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded'>
-      <Image src={img} alt={title} className="w-full h-auto"/>
+      <FramerImage src={img} alt={title} className="w-full h-auto" whileHover={{scale:1.05}}
+      transition={{duration:0.2}}/>
       </Link>
       <div className='w-full flex flex-col items-start justify-between mt-4'>
         <span className='text-[#eb6e00] font-medium text-xl'>{type}</span>
@@ -57,7 +62,7 @@ function updates() {
       </Head>
         <main className="w-full mb-16 flex flex-col items-center justify-center">
             <Layout className='pt-16'> 
-              <AnimatedText text='Imagination Trumps Knowledge!' className='text-[#f5f5f5f5] mb-16'/>
+              <AnimatedText text='Imagination Trumps Knowledge!' className='!text-[#f5f5f5] mb-16'/>
 
               <div className='grid grid-cols-12 gap-24'>
                 <div className='col-span-12'>
