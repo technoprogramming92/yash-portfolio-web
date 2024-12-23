@@ -11,7 +11,7 @@ const FeaturedUpdate=({type, title, summary, img, link, githubLink})=>{
   const FramerImage= motion(Image)
   return(
     <article className='flex w-full items-center justify-between rounded-3xl border border-solid border-[#f5f5f5] bg-[#000000] shadow-[#D6D6D4] shadow-xl p-12 relative'>
-    
+    <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-[#f5f5f5]"/>
       <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded'>
       <FramerImage src={img} alt={title} className="w-full h-auto" whileHover={{scale:1.05}}
       transition={{duration:0.2}}/>
@@ -36,6 +36,7 @@ const Project=({title,type,img,link,githubLink})=>{
   const FramerImage= motion(Image)
   return(
     <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-[#f5f5f5] bg-[#000000] p-6 relative'>
+      <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-[#f5f5f5]"/>
 <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded'>
       <FramerImage src={img} alt={title} className="w-full h-auto" whileHover={{scale:1.05}}
       transition={{duration:0.2}}/>
