@@ -14,7 +14,10 @@ const FeaturedUpdate=({type, title, summary, img, link, githubLink})=>{
     <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-[#f5f5f5]"/>
       <Link href={link} target='_blank' className='w-1/2 cursor-pointer overflow-hidden rounded'>
       <FramerImage src={img} alt={title} className="w-full h-auto" whileHover={{scale:1.05}}
-      transition={{duration:0.2}}/>
+      transition={{duration:0.2}}
+      priority
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+      />
       </Link>
 
      
@@ -27,7 +30,6 @@ const FeaturedUpdate=({type, title, summary, img, link, githubLink})=>{
         <Link href={link} target='_blank' className='ml-4 rounded-lg bg-[#f5f5f5] text-[#000000] p-2 px-6 text-lg font-semibold'>Visit Project</Link>
         </div>
         </div>
-      
     </article>
   )
 }
@@ -39,7 +41,10 @@ const Project=({title,type,img,link,githubLink})=>{
       <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-[#f5f5f5]"/>
 <Link href={link} target='_blank' className='w-full cursor-pointer overflow-hidden rounded'>
       <FramerImage src={img} alt={title} className="w-full h-auto" whileHover={{scale:1.05}}
-      transition={{duration:0.2}}/>
+      transition={{duration:0.2}}
+      priority
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+      />
       </Link>
       <div className='w-full flex flex-col items-start justify-between mt-4'>
         <span className='text-[#eb6e00] font-medium text-xl'>{type}</span>

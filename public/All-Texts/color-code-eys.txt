@@ -3,4 +3,6 @@
 #000000 -  Black
 
 
-Time : 3:32:11
+Time : 5:03:00
+
+bug is there !! please resolve it!
