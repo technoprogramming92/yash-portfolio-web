@@ -19,7 +19,7 @@ export default function App({ Component, pageProps }) {
   </Head>
   <main className={`${montserrat.variable} font-mont bg-light w-full min-h-screen`}>
     <NavBar></NavBar>
-  <AnimatePresence mode="wait">
+  <AnimatePresence mode="wait" layoutEffect={false}>
   <Component key={router.asPath} {...pageProps} />
   </AnimatePresence>
   <Footer/>

@@ -8,7 +8,7 @@ import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
 import TransitionEffect from "@/components/TransitionEffect";
-
+import { AnimatePresence } from "framer-motion";
 function about() {
   return (
     <>
@@ -16,7 +16,10 @@ function about() {
         <title>Yash Shah | About Page</title>
         <meta name="description" content="My Description" />
       </Head>
-      <TransitionEffect />
+      <AnimatePresence mode="wait">
+  <TransitionEffect />
+</AnimatePresence>
+
       <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText
