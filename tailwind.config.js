@@ -41,8 +41,20 @@ module.exports = {
       'spin-slow': 'spin 8s linear infinite',
     },
     backgroundImage:{
-      circularLight:'repeating-radial-gradient(#f5f5f5 2px, #000000 5px, #000000 100px);'
-    }
+      circularLight:'repeating-radial-gradient(#f5f5f5 2px, #000000 5px, #000000 100px);',
+      circularLightLg:'repeating-radial-gradient(#f5f5f5 2px, #000000 5px, #000000 80px);',
+      
+
+  
+
+  circularDarkMd:
+      "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 6px,#1b1b1b 60px)",
+
+  
+
+  circularDarkSm:
+      "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 4px,#1b1b1b 40px)",
+},
     },
   },
   plugins: [],

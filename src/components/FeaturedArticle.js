@@ -13,7 +13,7 @@ const FeaturedArticle=({img,title,time,summary,link})=> {
       transition={{duration:0.2}}/>
       </Link>
       <Link href={link} target="_blank">
-      <h2 className='text-[#f5f5f5] capitalize text-2xl font-bold my-2 hover:underline underline-offset-4 mt-4'>{title}
+      <h2 className='text-[#f5f5f5] capitalize text-2xl font-bold my-2 hover:underline underline-offset-4 mt-4 xs:text-lg'>{title}
       </h2>
       <p className='text-sm mb-2'>{summary}</p>
       <span className='text-[#eb6e00] font-semibold'>{time}</span>
